@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logos {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin: 0 10px; /* Moves logos closer to text */
+}
+
+header .text {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 50%;
+    line-height: 1.2;
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+        .button-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 120px; /* Space below the logo */
+            width: 100%;  /* Ensure it's full width */
+            padding: 10px;
+        }
+        .button-section a {
+            background-color: #FF4500;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .button-section a:hover {
+            background-color: #CC3700;
+        }
+        .container {
+            max-width: 900px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            overflow-y: auto;
+            flex-grow: 1;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+        h2:hover {
+            color: #FF4500;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 6px;
+            width: 100%;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .section:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .section-content {
+            display: none;
+            padding-left: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: left;
+        }
+        .section-content a {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #D3D3D3;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        /* Section Buttons Style */
+        .button-container {
+            display: flex;
+            gap: 6px; /* 5-6px space between buttons */
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .button-container button {
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 15px;
+            border: 2px solid #FF4500;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button-container button:hover {
+            background-color: #FF4500;
+            color: white;
+        }
+
+        .btn-plain {
+            background-color: transparent;
+            color: #FF4500;
+            border: 2px solid #FF4500;
+            text-decoration: none;
+        }
+        .btn-plain:hover {
+            background-color: #FF4500;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logos">
+        <img src="2.png" alt="Logo 1">
+    </div>
+    <div class="text">
+        JOSE PANGANIBAN MUNICIPAL DISASTER RISK REDUCTION <br> 
+        AND MANAGEMENT OFFICE
+    </div>
+    <div class="logos">
+        <img src="1.png" alt="Logo 2">
+    </div>
+</header>
+
+    <!-- Return to Homepage Button Below Logo -->
+    <div class="button-section">
+        <a href="homepage.html">Return to Homepage</a>
+    </div>
+
+    <div class="container">
+        <h1>MANDATE</h1>
+        <div class="section">
+            <p>Uphold the People’s Constitutional Rights to Life and Property, By Addressing the Root Causes of Vulnerabilities to Disasters, Strengthening the Institutional Capacity for DRRM and Building the Resilience of Community to Disasters, Including Climate Change Impacts.</p>
+        </div>
+
+        <h1>VISION</h1>
+        <div class="section">
+            <p>Mambuleños ensured with the right to life and property in 2040</p>
+        </div>
+
+        <h1>MISSION</h1>
+        <div class="section">
+            <p>To establish a community with knowledge, skills, and awareness, prepared in meeting emergencies and climate change impacts, reducing its risk, responding effectively to save life, property, and balance the environment through a capable Municipal Disaster Risk Reduction and Management Council and Climate Change Adaptation Council, Partners, and Volunteers. All taking action to attain maximum security.</p>
+        </div>
+
+        <h1>ORGANIZATIONAL OUTCOME</h1>
+        <div class="section">
+            <p>Effective Delivery of Disaster Risk Reduction and Management services in coordination with the different sectors and agencies</p>
+        </div>
+
+        <h1>SECTIONS AND FUNCTIONS</h1>
+
+        <div class="button-container">
+            <button onclick="toggleSection('mgdhI')">MGDH-I (MDRRMO)</button>
+            <button onclick="toggleSection('adminTraining')">Administration and Training Section</button>
+            <button onclick="toggleSection('researchPlanning')">Research and Planning Section</button>
+        </div>
+
+        <!-- MGDH-I Section -->
+        <div id="mgdhI" class="section-content">
+            <p><strong>Functions:</strong></p>
+            <p>a.) Responsible for the day to day operation of the LDRRM Office;</p>
+            <p>b.) Designs, programs and coordinates DRRM activities;</p>
+            <p>c.) Facilitates and supports risk assessment and planning activities at the local level;</p>
+            <p>d.) Consolidates local disaster risk information which includes natural hazards, vulnerabilities, and climate change risks, and maintains local risk maps;</p>
+            <p>e.) Conducts research and development initiatives on DRRM;</p>
+            <p>f.) Formulates and implements LDRRMP in close coordination with the MDRRMC;</p>
+            <p>g.) Prepares and submits to the Local Sanggunian through the LDRRMC and LDC the different plans and budget;</p>
+            <p>h.) Reports on LDRRM fund utilization, and other reports to COA, OCD, and DILG;</p>
+            <p>i.) Serves as the secretariat and executive arm of the Local DRMM council (LDRRMC);</p>
+            <p>j.) Ensures the involvement of the most vulnerable sectors in risk assessment planning;</p>
+            <p>k.) Supervises and monitors the BDRRM fund utilization and implementation of BDRRM Programs, Projects, and Activities (PPA’s);</p>
+            <p>l.) Implements policies, approved plans, and programs of the LDRRMC consistent with the policies and guidelines laid down in this Act;</p>
+            <p>m.) Establishes Municipal Disaster Risk Reduction and Management operation center;</p>
+            <p>n.) Prepares and submits, through the LDRRMC and the LDC, the report on the utilization of the LDRRMF and other dedicated disaster risks reduction and management resources of the local COA, copy furnished the regional director of the OCD and the Local Government Operations Officer of the DILG;</p>
+            <p>o.) Acts on matters that may be authorized by the LDRRMC.</p>
+        </div>
+
+        <!-- Administration and Training Section -->
+        <div id="adminTraining" class="section-content">
+            <p><strong>Functions:</strong></p>
+            <p>a.) Organizes and conducts training, orientation, and knowledge management activities on DRRM at the local level.</p>
+            <p>b.) Identifies, assesses, and manages the hazards, vulnerabilities, and risks that may impact the community.</p>
+            <p>c.) Assists in the preparation of the Local DRRM Plan.</p>
+            <p>d.) Coordinates with other agencies for disaster response and mitigation activities.</p>
+        </div>
+
+        <!-- Research and Planning Section -->
+        <div id="researchPlanning" class="section-content">
+            <p><strong>Functions:</strong></p>
+            <p>a.) Conducts research and risk assessments to provide data for DRRM planning.</p>
+            <p>b.) Prepares reports on disaster risk and vulnerability assessments.</p>
+            <p>c.) Recommends programs to strengthen DRRM capabilities in the community.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Jose Panganiban MDRRMO. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleSection(sectionId) {
+            var allSections = document.querySelectorAll('.section-content');
+            
+            // Close all sections first
+            allSections.forEach(function(section) {
+                if (section.id !== sectionId) {
+                    section.style.display = "none";
+                }
+            });
+
+            // Toggle the selected section
+            var sectionContent = document.getElementById(sectionId);
+            if (sectionContent.style.display === "block") {
+                sectionContent.style.display = "none";
+            } else {
+                sectionContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

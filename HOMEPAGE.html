@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Panganiban MDRRMO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: url(BRwebpage.png) no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: transparent;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 400px;
+            width: 100%;
+        }
+        header h1, header h2 {
+            -webkit-text-stroke: 1px black;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin: 2px 0;
+        }
+        header h1 {
+            font-size: 50px;
+        }
+		.weather-widget {
+            position: fixed;
+            bottom: 110px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 14px;
+            width: 260px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .weather-widget img {
+            width: 40px;
+            height: auto;
+            vertical-align: middle;
+        }
+        .weather-widget h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .weather-widget p {
+            margin: 5px 0;
+        }
+        .announcement {
+            background: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .announcement span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .pst-container {
+            position: fixed;
+            top: 45px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            z-index: 3;
+        }
+        .logo-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 20px;
+        }
+        .logo-container img {
+            width: 300px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 310px;
+        }
+        .buttons button {
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .buttons button:hover {
+            background-color: #b71c1c;
+        }
+        .hotlines {
+            position: fixed;
+            bottom: 110px;
+            right: 20px;
+            background: rgba(128, 128, 128, 0.9);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+            width: 260px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+        .hotlines h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            color: #ffcc00;
+        }
+        .hotlines p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        footer {
+            background-color: rgba(50, 50, 50, 0.8);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="announcement"><span>GINAGAWA KO TO KASE BORED NA KOOOOOO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></div>
+    <div class="pst-container" id="pst"></div>
+    <script>
+        function updatePST() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true, timeZone: 'Asia/Manila' };
+            document.getElementById('pst').innerText = new Intl.DateTimeFormat('en-US', options).format(now);
+        }
+        setInterval(updatePST, 1000);
+        updatePST();
+    </script>
+    <div class="logo-container">
+        <img src="2.png" alt="Municipal Government Logo">
+        <img src="1.png" alt="MDRRMO Logo">
+    </div>
+    <header>
+        <h1>Municipal Disaster Risk Reduction and Management Office</h1>
+        <h2>Jose Panganiban, Camarines Norte</h2>
+    </header>
+    <div class="buttons">
+        <button onclick="location.href='background.html'">Background</button>
+        <button onclick="location.href='services.html'">Services Offered</button>
+        <button onclick="location.href='structure.html'">Organizational Structure</button>
+    </div>
+    <div class="hotlines">
+        <h3>EMERGENCY HOTLINES</h3>
+        <p>MDRRMO (TM): 09617163626 </p>
+        <p>MDRRMO (SMART): 09368250417</p>
+        <p>Fire: 09209895918</p>
+        <p>Police: 09985985956</p>
+    </div>
+	 <!-- Weather Widget -->
+    <div class="weather-widget" id="weather">
+        <h3>WEATHER FORECAST</h3>
+        <p><img src="weatherimage.png" alt="Weather"> 25°C - 30°C</p>
+        <p>Partly cloudy to cloudy skies</p>
+        <p>WIND: Light to Moderate</p>
+        <p>DIRECTION: East</p>
+        <p>COASTAL CONDITION: Slight to Moderate</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 Jose Panganiban MDRRMO. All rights reserved.</p>
+        <a class="facebook-link" href="https://www.facebook.com/josepanganiban.mdrrmo" target="_blank">Follow us on Facebook</a>
+    </footer>
+</body>
+</html>
